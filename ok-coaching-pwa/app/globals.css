@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #00EDFF;
+  --text-primary: #FFFFFF;
+  --text-label: #BCBCBC;
+  --text-placeholder: #505050;
+  --text-input: #DEDEDE;
+  --input-bg: #222223;
+}
+
+body {
+  color: var(--text-primary);
+  background: #191919;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+input {
+  background-color: var(--input-bg);
+  color: var(--text-input);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+input::placeholder {
+  color: var(--text-placeholder);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn-google {
+  background-color: transparent;
+  border: 1px solid var(--text-label);
+  color: var(--text-primary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Hide scrollbar for height picker */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.scroller-item {
+  transition: all 0.3s ease;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

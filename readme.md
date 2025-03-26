@@ -1,0 +1,16 @@
+# OKCOACHING - MAIN
+Web app + old mobile ui + backend
+
+env - 
+
+NEXTAUTH_SECRET
+NEXTAUTH_URL
+GOOGLE_CLIENT_ID
+GOOGLE_CLIENT_SECRET
+MONGODB_URI    
+
+# OKCOACHING - PWA
+Pwa app 
+
+
+
